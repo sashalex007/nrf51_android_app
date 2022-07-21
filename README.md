@@ -1,6 +1,8 @@
 # NRF51 android app
 
-This is the android application complementary to my nrf51 sensor tag firmware. This application will automatically connect to the device and will record/save sensor data on command
+This is the android application complementary to my nrf51 sensor tag firmware. This application will automatically connect to the device and will record/save sensor data on command.
+
+![Screenshot](screenshot.png)
 
 Related projects:
 https://github.com/sashalex007/nrf51_MPU6050_calibrate
