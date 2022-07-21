@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        targetSdkVersion 27
+        minSdkVersion 19
+        vectorDrawables.useSupportLibrary true
+        multiDexEnabled true
+        applicationId "com.alexandrepokhodoun"
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion = '28.0.3'
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.github.AnyChart:AnyChart-Android:1.0.3'
+    implementation files('/Volumes/HDD/Downloads/opencsv-4.5.jar')
+    implementation files('/Volumes/HDD/Downloads/poishadow-all.jar')
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+}
